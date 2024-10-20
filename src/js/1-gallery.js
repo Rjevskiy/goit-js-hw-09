@@ -1,9 +1,4 @@
 
-
-
-
-
-
 const galleryItems = [
   {
         preview: 'https://cdn.pixabay.com/photo/2019/05/14/16/43/rchids-4202820__480.jpg',
@@ -61,16 +56,17 @@ function createGalleryMarkup(items) {
   return items.map(({ preview, original, description }) => {
     return `
       <li>
-        <a class="gallery__item" href="${original}">
-          <img class="gallery__image" src="${preview}" alt="${description}" />
+        <a class="gallery-item" href="${original}">
+          <img class="gallery-image" src="${preview}" alt="${description}" />
         </a>
       </li>
     `;
   }).join('');
 }
 
-// Ініціалізація SimpleLightbox
+//  simpleLightbox 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
+
