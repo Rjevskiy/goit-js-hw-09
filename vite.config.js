@@ -39,10 +39,13 @@ export default defineConfig(({ command }) => {
     },
     plugins: [
       injectHTML(),
-      FullReload(['./src/**/**.html']),
+      FullReload(['./src/public/index.html']),
       SortCss({
         sort: 'mobile-first',
       }),
     ],
   };
 });
+
+/*
+'./src/**/** /*.html'
