@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
 ul,
 ol {
     margin-top: 0;
@@ -34,7 +40,7 @@ button {
     cursor: pointer;
 }
 
-.boddy {
+.conteiner {
     width: 1440px;
     height: 696px;
     background: #fff;
@@ -49,18 +55,40 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    justify-content: center
 }
 
 .gallery-item {
     list-style: none;
-
-
 }
 
 .gallery-image {
     width: 360px;
     height: 200px;
     object-fit: cover;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 16px;
+    top: 16px;
+    width: 1440px;
+    height: 696px;
+    margin: auto;
+    background: rgba(46, 47, 66, 0.8);
+    overflow: auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    padding-top: 28px;
+
+    padding-bottom: 28px;
 
 }
