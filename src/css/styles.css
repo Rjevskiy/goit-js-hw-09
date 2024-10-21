@@ -98,6 +98,7 @@ button {
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
+    
 }
 
 .feedback_button{
