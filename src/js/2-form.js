@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
     }
 });
 
-/
+
 form.addEventListener('input', (event) => {
     const { name, value } = event.target;
     formData[name] = value.trim();  
