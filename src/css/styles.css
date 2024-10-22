@@ -1,3 +1,20 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./animations.css');
+
+/* Sections style */
+@import url('./header.css');
+@import url('./badges.css');
+@import url('./back-link.css');
+
 ul,
 ol {
     margin-top: 0;
@@ -34,7 +51,23 @@ button {
     cursor: pointer;
 }
 
-.boddy {
+.header{}
+
+.div{
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 3;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+} 
+
+
+.main{
+  height: 200px;
+  flex-grow: 0;}
+
+.gallery {background-color: #111;
     width: 1440px;
     height: 696px;
     background: #fff;
@@ -42,27 +75,17 @@ button {
     padding-right: 156px;
     padding-top: 24px;
     padding-bottom: 24px;
-}
-
-.gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center
-}
-
-.gallery-item {
-    list-style: none;
-
-
-}
+  }
 
 .gallery-image {
     width: 360px;
     height: 200px;
     object-fit: cover;
-
 }
 
 
@@ -76,40 +99,48 @@ button {
     width: 295px;
     height: 40px;
     justify-content: space-evenly;
-    align-items: center;
 }
 
-.feedback_form{border-radius: 8px;
-    padding: 24px;
-    width: 408px;
-    height: 296px;
-    background-color: #fff;
+.feedback_form{display: flex;
+    flex-direction: column;
+ 
+    border-radius: 8px;
+   padding-bottom: 24px;
+   padding-left: 24px;
+   padding-right: 24px;
+   padding-top: 16px;
+    width: 360px;
+    height: 192px;
+    background-color: #ffff;
 }   
 
-.feedback_div{font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #2e2f42;
+.feedback_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
 }
 
 .feedback_label{
     display: flex;
     flex-direction: column;
-    margin-bottom: 8px;
-    
+    padding-top: 8px;
+    align-items: flex-start;
+}
+.feedback_message{
+    height: 80px;
 }
 
+
 .feedback_button{
+    margin-top: 16px;
     border-radius: 8px;
-        padding: 8px;
+    padding: 8px;
     width: 95px;
     height: 40px;
     background: #4e75ff;
     border: none;
     color: #ffff;
     font-weight: 500;
-    margin-top: 8px;
+   
     letter-spacing: 0.12em;
     }   

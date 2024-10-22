@@ -2,28 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/goit-js-hw-09/css/styles.css">
-    <title>Feedback Form</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-    <form class="feedback_form" autocomplete="off">
-        <div class="feedback_div">
-            <label class="feedback_label">
-                Email
-                <input type="email" name="email" autofocus />
-            </label>
-            <label class="feedback_label">
-                Message
-                <textarea name="message" rows="8"></textarea>
-            </label>
-            <button class="feedback_button" type="submit">Submit</button>
-        </div>
-    </form>
 
-    <script src="/goit-js-hw-09/js/2-form.js"></script>
+
+  <main>
+    <div class="container">
+      <a class="back-link" href="./index.html">Go back</a>
+      <h1 class="main-title">Form</h1>
+    </div>
+
+    <div class="feedback_div">
+      <form class="feedback_form">
+        <label class="feedback_label" for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label class="feedback_label" for="message">Message</label>
+        <textarea class="feedback_message" name="message" id="message" required></textarea>
+
+        <button class="feedback_button" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+
+  <script type="module" src="./js/2-form.js"></script>
 </body>
 
 </html>
